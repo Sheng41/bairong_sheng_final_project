@@ -1,0 +1,452 @@
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero*/
+
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
+margin: 0; 
+padding: 0; 
+} 
+
+img { 
+border: none; 
+margin: 0; 
+padding: 0; 
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #ededed;
+}
+a:link, a:visited { 
+text-decoration:none; 
+}
+
+a:hover, a:active { 
+text-decoration:none; 
+ }
+
+.hidden
+{
+  display: none;
+}
+
+.container
+{
+	width: 980px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+header
+{
+	background-image: url(../images/back.jpeg);
+ background-image: repeat-x;
+}
+.mainHeader
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.logoHeader
+{
+	width: 220px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.mainNav
+{
+	width: 500px;
+	height: 25px;
+	margin-top: 45px;
+	margin-left: auto;
+	/*background-color: red;*/
+}
+
+.mainNav ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+.mainNav ul li
+{
+	display: inline;
+	font-size: 14px;
+	margin-left: 25px;
+}
+
+.mainNav ul li a
+{
+	color: #fff;
+	padding: 5px;
+}
+
+.mainNav ul li a:hover
+{
+	background-color: #ddeff7;
+	padding: 5px;
+}
+
+.hunan
+{
+	padding-left: 10px;
+}
+.hero
+{
+	height: 384px;
+	background: url(../images/home_header.jpg) no-repeat bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.hero h2
+{
+	color: #fff;
+	font-size: 31px;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+.hero h3
+{
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.resources
+{
+	margin-left: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+}
+
+.landscape, .food, .entertainment
+{
+
+	width: 1050px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.resources p
+{
+	color: #29a7be;
+	font-size: 16px;
+	margin-top: 20px;
+	line-height: 22px;
+	justify-content: justify;
+	
+}
+
+.resBut
+{
+	margin-top: 20px;
+	background-color: #29a7be;
+	display: block;
+	width: 100px;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;	
+}
+
+.resBut:hover
+{
+	background-color: #3f6e84;
+}
+
+.testimonialcon
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.testimonial
+{
+	width: 460px;
+	background-color: #efefef;
+	height: 170px;
+	margin-bottom: 20px
+}
+
+.testImage
+{
+	float: left;
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+.testimonil p
+{
+	margin-top: 20px;
+	color: #666;
+	line-height: 22px;
+	font-size: 16px;
+}
+
+.testimonialName
+{
+	display: block;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #61a3c1;
+}
+
+#iconNav img
+{
+	width: 45px;
+	height: 45px;
+
+}
+
+.mainfooter
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-color: #ccc;
+	height: 125px;
+
+	background-image: url(../images/footer_bg.jpg);
+	background-repeat: repeat-x;
+}
+
+.logoNav
+{
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+footer
+{
+	background-color: lightblue;
+}
+
+
+.footerNav ul
+{
+	list-style-type: none;
+	padding: 0;
+	width: 500px;
+}
+
+.footerNav ul li
+{
+	display: inline;
+	margin-right: 25px;
+}
+
+.footerNav ul li a
+{
+	color: #333;
+}
+
+.footerNav ul li a: hover
+{
+	color: #999;
+}
+
+.logoFooter
+{
+	margin-top: 25px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.footerNav
+{
+	margin-left: 20px;
+}
+
+.socialMedia
+{
+	margin-left: 800px; 
+	height: 45px;
+	margin-top: 28px;
+}
+
+#iconNav
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+#iconNav li
+{
+	display: inline;
+	margin-right: 10px;
+}
+
+#iconNav li a
+{
+	filter: grayscale(100%);
+}
+
+#iconNav
+{
+	filter: grayscale(0%);
+}
+
+.mainHeaderContact
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.heroContact
+{
+	height: 384px;
+	width: 980;
+	background: url(../images/contact_header.jpg) no-repeat bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-top: -200px;
+}
+
+.headerContact h2, .heroContact h3
+{
+	color: #fff;
+	text-align: center;
+}
+
+.herContact h2
+{
+	font-size: 31px;
+	letter-spacing: -1px;
+
+}
+
+.heroContact h3
+{
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+#mainContact
+{
+	width: 940px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: : wrap;
+}
+
+#mainContact h2
+{
+	font-size: 30px;
+	color: #2073a8;
+	background-color: #ddeff7;
+	width: 940px;
+	padding: 8px 0px 8px 5px; 
+}
+
+#contactArea
+{
+	width: 469px;
+	border-right: solid 1px #ccc;
+	margin-bottom: 30px;
+}
+
+#contactText
+{
+	font-size: 21px;
+	margin-bottom: 30px;
+	width: 340px;
+}
+
+input, textarea
+{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 300px;
+	height: 10px;
+	background-color: #efefef;
+	border: 1px solid #999;
+
+	box-shadow: 10px 10px 5px rgba(100, 100, 100, .5) inset;
+}
+
+#comments
+{
+	width: 360px;
+	height: 200px;
+}
+
+#submit
+{
+	width: 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	background-bottom: 5px;
+	background-color: #2073a8
+	height: 30px;
+	color: #fff;
+
+}
+
+#mapArea
+{
+	width: 380px;
+	margin-left: 90px;
+}
+
+#mapArea h3
+{
+	font-size: 21px;
+	color: #2073a8;
+}
+
+#mapArea ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+#mainGallery
+{
+ margin-left: 25px;
+ margin-top: 40px;
+ 
+ padding-bottom: 40px;
+ display: flex;
+ flex-direction: row;
+   justify-content: flex-start;
+}
+
+#secondGallery
+{
+ margin-left: 25px;
+ margin-top: 0px;
+ 
+ padding-bottom: 40px;
+ display: flex;
+ flex-direction: row;
+   justify-content: flex-start;
+
+}
+
